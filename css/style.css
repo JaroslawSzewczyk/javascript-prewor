@@ -1,6 +1,14 @@
 /* Global */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
+  position: relative;
   background-color: #8bb4f7;
+  height: 100vh;
 }
 
 button {
@@ -14,9 +22,22 @@ button {
   cursor: pointer;
 }
 
+p {
+  font-size: 24px;
+  color: #363946;
+}
+
 /* Container */
 .container {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   font-family: 'Press Start 2P', cursive;
+  color: #363946;
+  font-size: 24px;
 }
 
 .container #buttons {
@@ -24,6 +45,7 @@ button {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  width: 90%;
   margin: 50px 0 150px;
 }
 
@@ -33,7 +55,13 @@ button {
 
 .container #messages {
   text-align: center;
-  font-size: 24px;
-  color: #363946;
+  width: 40%;
 }
+
+.container .results {
+  width: 40%;
+  text-align: center;
+}
+
+/* Help */
 /*# sourceMappingURL=style.css.map */
